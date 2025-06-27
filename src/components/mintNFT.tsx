@@ -30,9 +30,10 @@ const NFT_ABI = [
 const CONTRACT_ADDRESS = '0x90878Beb21f5AC031bC2118f7CF9146d3c5d7679';
 
 // Pinata configuration - Tạo API key tại https://app.pinata.cloud/
-const PINATA_JWT = process.env.JWT; // Thay bằng JWT token từ Pinata
-const PINATA_GATEWAY = process.env.GATEWAY; // Ví dụ: 'https://gateway.pinata.cloud'
-
+const PINATA_JWT = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiI2MDU0ZjVmOC1kMDM0LTRlMzgtYjMzNy0zMTViZWJiNDRjYmQiLCJlbWFpbCI6Imxvbmd0ZGE1azQ4Z3RiQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaW5fcG9saWN5Ijp7InJlZ2lvbnMiOlt7ImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxLCJpZCI6IkZSQTEifSx7ImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxLCJpZCI6Ik5ZQzEifV0sInZlcnNpb24iOjF9LCJtZmFfZW5hYmxlZCI6ZmFsc2UsInN0YXR1cyI6IkFDVElWRSJ9LCJhdXRoZW50aWNhdGlvblR5cGUiOiJzY29wZWRLZXkiLCJzY29wZWRLZXlLZXkiOiJmODFmMGMzMGEwZjRjMmI2NzgwYiIsInNjb3BlZEtleVNlY3JldCI6IjgyMTUyOWUyODBiZTFmYTBmOGE5OGRkNTBhYjg0ZmU2MDU0YWMzYjY4OGM3NmQ5YTk4NWNhN2U2ZTYxMTY0ZTciLCJleHAiOjE3ODI1NDE4ODR9.WXxVreuJWCReS7FXvgRuZ7fV6CleMVHhI_WKGgR3Oe0'; // Thay bằng JWT token từ Pinata
+const PINATA_GATEWAY = 'lavender-left-hookworm-315.mypinata.cloud'; // Ví dụ: 'https://gateway.pinata.cloud'
+console.log('Pinata JWT:', PINATA_JWT);
+console.log('Pinata Gateway:', PINATA_GATEWAY);
 export function MintNFT() {
   const { address, isConnected } = useAccount();
   const [file, setFile] = useState<File | null>(null);

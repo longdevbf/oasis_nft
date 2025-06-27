@@ -1,5 +1,5 @@
 import { getDefaultConfig } from '@rainbow-me/rainbowkit';
-import { mainnet, sapphire, sapphireTestnet } from 'wagmi/chains';
+import { mainnet, sapphireTestnet } from 'wagmi/chains';
 
 const oasisSapphire = {
   id: 0x5afe,
