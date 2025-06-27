@@ -1,5 +1,5 @@
 import { ConnectWallet } from "@/components/connectWallet";
-
+import { MintNFT } from "@/components/mintNFT";
 export default function Home() {
   return (
     <div className="min-h-screen flex items-center justify-center p-8">
@@ -8,6 +8,7 @@ export default function Home() {
           Kết nối với Oasis Blockchain
         </h1>
         <ConnectWallet />
+        <MintNFT />
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ const oasisSapphire = {
 } as const;
 
 export const config = getDefaultConfig({
-  appName: 'Oasis Web',
+  appName: 'Oasis',
   projectId: '9431fa7eccc5540aa3cfbc0502e9f944', 
   chains: [oasisSapphire, sapphireTestnet, mainnet],
   ssr: true,
